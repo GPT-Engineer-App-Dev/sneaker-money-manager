@@ -5,7 +5,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
-import { DatePickerDemo } from "@/components/ui/date-picker";
+
 
 const Index = () => {
   const [transactions, setTransactions] = useState([
@@ -42,7 +42,7 @@ const Index = () => {
             <div className="space-y-4">
               <div>
                 <Label htmlFor="date">Date</Label>
-                <DatePickerDemo />
+                <Input id="date" name="date" value={newTransaction.date} onChange={handleInputChange} />
               </div>
               <div>
                 <Label htmlFor="amount">Amount</Label>
